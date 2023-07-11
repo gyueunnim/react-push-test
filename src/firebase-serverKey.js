@@ -1,0 +1,3 @@
+let serverKey = BI-_sWLOnaahPCqAvw8zFydQz1yR24QkOp817njCh_VWqLCGjdSbr3MtvjvHqbrz8D1cBXKdB8rab5O3hDoTTmk;
+
+export default serverKey;
