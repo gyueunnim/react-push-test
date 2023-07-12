@@ -35,7 +35,9 @@ getToken(messaging, { vapidKey: 'BI-_sWLOnaahPCqAvw8zFydQz1yR24QkOp817njCh_VWqLC
 })
 
 onMessage(messaging, (payload) => {
-  console.log('Message : ', payload)
+  console.log('Received foreground Message : ', payload.notification)
+  const { title, body } = payload.notification;
+  new Notification(title, { body })
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
